@@ -1,0 +1,9 @@
+prefix=/Users/ofosuosei/Desktop/Duke/DA/Asignments/rust_web_service_for_model_inferences/backend/target/debug/build/openssl-sys-222fcb2b0a44d1b7/out/openssl-build/install
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: OpenSSL
+Description: Secure Sockets Layer and cryptography libraries and tools
+Version: 3.2.1
+Requires: libssl libcrypto

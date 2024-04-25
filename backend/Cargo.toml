@@ -1,0 +1,15 @@
+[package]
+name = "server"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+hyper = {version = "0.13"}
+tokio = {  version = "0.2", features = ["macros", "rt-threaded"]}
+serde = {version = "1.0", features = ["derive"] }
+openssl = { version = "0.10.35", features = ["vendored"] }
+serde_json = "1.0"
+llm = { git = "https://github.com/rustformers/llm", branch = "main"}
+rand = "0.8.5"
