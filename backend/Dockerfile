@@ -1,16 +1,22 @@
-FROM ghcr.io/cargo-lambda/cargo-lambda:latest as builder
+FROM debian:buster-slim as builder
 
 WORKDIR /usr/app
 
 COPY . .
 
-RUN cargo clean && cargo lambda build --release --arm64 && ls /usr/app/target
+ENV PATH="/root/.cargo/bin:${PATH}"
 
-FROM public.ecr.aws/lambda/provided:al2-arm64
+RUN apt-get update
+RUN apt-get install -y cargo curl build-essential gcc libssl-dev pkg-config
+RUN curl https://sh.rustup.rs -sSf | sh -s -- -y \
+	&& . "$HOME/.cargo/env"
+RUN rustup update \
+RUN cargo build --release --target=x86_64-unknown-linux-gnu
+FROM debian:buster-slim
 
 WORKDIR /app
 
-COPY --from=builder /usr/app/target/lambda/transformer_endpoint/bootstrap /app/
-COPY --from=builder /usr/app/open_llama_3b-f16.bin ./
+COPY --from=builder /usr/app/target/release/server /app/
+RUN wget -O /usr/app/open_llama_3b-q4_0-ggjt.bin https://huggingface.co/rustformers/open-llama-ggml/resolve/main/open_llama_3b-q4_0-ggjt.bin?download=true
 
-ENTRYPOINT ["/app/bootstrap"]
+ENTRYPOINT ["/app/server"]
