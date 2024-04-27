@@ -1,3 +1,9 @@
+# simplyChat 💬
+[![frontend](https://github.com/johnnymosby/cloud_final_project/actions/workflows/docker-image-frontend.yml/badge.svg)][def]
+[![backend](https://github.com/johnnymosby/cloud_final_project/actions/workflows/docker-image-backend.yml/badge.svg)][def]
+[![Streamlit](https://img.shields.io/badge/-Streamlit-FF4B4B?style=flat-square&logo=streamlit&logoColor=white)](https://streamlit.io/)
+[![AWS](https://img.shields.io/badge/-AWS-232F3E?style=flat-square&logo=amazon-aws&logoColor=white)](https://aws.amazon.com/)
+
 # Rust Serverless Transformer Endpoint
 
 This project demonstrates how to build and deploy a Rust-based serverless application on AWS Lambda using Docker. It utilizes Hugging Face's transformer models to provide an NLP service via a RESTful API, accessible through AWS API Gateway.
@@ -62,3 +68,6 @@ docker build -t transformer_endpoint .
 * AWS documentation for clear guidelines on using AWS Lambda and API Gateway.
 
 *  Credit to [AIAnytime](https://github.com/AIAnytime/LLM-Inference-API-in-Rust/blob/main/language_model_server/src/main.rs) for the inspirational code example.
+
+[def]: https://github.com/johnnymosby/cloud_final_project/actions/workflows/docker-image-frontend.yml
+[def]: https://github.com/johnnymosby/cloud_final_project/actions/workflows/docker-image-backend.yml
