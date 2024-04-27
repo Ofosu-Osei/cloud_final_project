@@ -29,4 +29,6 @@ RUN  apt-get update \
 	&& apt-get install -y wget \
 	&& wget -O /app/open_llama_3b-q4_0-ggjt.bin https://huggingface.co/rustformers/open-llama-ggml/resolve/main/open_llama_3b-q4_0-ggjt.bin?download=true
 
+EXPOSE 8083
+
 ENTRYPOINT ["/app/server"]

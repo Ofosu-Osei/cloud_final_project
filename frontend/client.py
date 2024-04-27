@@ -3,7 +3,7 @@ import requests
 import json
 
 # Define the URL of the backend API
-API_URL = "http://localhost:8083/api/chat"
+API_URL = "http://127.0.0.1:8083/api/chat"
 
 st.title('Chat with AI')
 
