@@ -1,8 +1,11 @@
 # simplyChat 💬
 [![frontend](https://github.com/johnnymosby/cloud_final_project/actions/workflows/docker-image-frontend.yml/badge.svg)][def]
 [![backend](https://github.com/johnnymosby/cloud_final_project/actions/workflows/docker-image-backend.yml/badge.svg)][def]
+[![rust](https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust&logoColor=white)](https://www.rust-lang.org/)
 [![Streamlit](https://img.shields.io/badge/-Streamlit-FF4B4B?style=flat-square&logo=streamlit&logoColor=white)](https://streamlit.io/)
+[![docker](https://img.shields.io/badge/Docker-2CA5E0?style=for-the-badge&logo=docker&logoColor=white)](https://www.docker.com/#build)
 [![AWS](https://img.shields.io/badge/-AWS-232F3E?style=flat-square&logo=amazon-aws&logoColor=white)](https://aws.amazon.com/)
+[![kubernetes](https://img.shields.io/badge/kubernetes-326ce5.svg?&style=for-the-badge&logo=kubernetes&logoColor=white)](https://kubernetes.io/)
 
 # Rust Serverless Transformer Endpoint
 
