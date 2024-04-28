@@ -7,11 +7,26 @@
 [![AWS](https://img.shields.io/badge/-AWS-232F3E?style=flat-square&logo=amazon-aws&logoColor=white)](https://aws.amazon.com/)
 [![kubernetes](https://img.shields.io/badge/kubernetes-326ce5.svg?&style=for-the-badge&logo=kubernetes&logoColor=white)](https://kubernetes.io/)
 
-# Rust Serverless Transformer Endpoint
+# LLMOps - Model Serving with Rust
 
-This project demonstrates how to deploy an open-source language model on AWS using Docker. It utilizes Hugging Face's transformer models in Rust to provide an NLP service via a Streamlit frontend.
+## Overview
+
+LLMOps is a cutting-edge project designed to operationalize machine learning by serving an open-source model through a robust web service developed in Rust. This project emphasizes the deployment of machine learning models at scale, utilizing Kubernetes for orchestration and a CI/CD pipeline for streamlined operations. This README provides all necessary information to get started with LLMOps, including setup and usage.
+
+**Final Project Requirements**
+
+As part of our objectives, we aim to:
+
+* **Obtain and Serve an Open Source ML Model:** We select and deploy an open-source machine learning model that provides predictions based on input data.
+
+* **Develop a Rust Web Service:** Our service is engineered to handle requests efficiently and return accurate inferences from the machine learning model.
+
+* **Containerization and Kubernetes Deployment:** We containerize the Rust web service using Docker and deploy it to a Kubernetes cluster to ensure scalability and reliability.
+
+* **Implement a CI/CD Pipeline:** Our development process is supported by a robust CI/CD pipeline that automates testing, builds, and deployment, facilitating rapid iteration and maintenance.
 
 ## Features
+This project demonstrates how to deploy an open-source language model on AWS using Docker. It utilizes Hugging Face's transformer models in Rust to provide an NLP service via a Streamlit frontend.
 
 * Utilizes **Rust** for high-performance and reliable backend services.
 
@@ -23,6 +38,11 @@ This project demonstrates how to deploy an open-source language model on AWS usi
 
 * Run:
 ```bash
+git clone https://github.com/johnnymosby/ç.git
+cd cloud_final_project
+```
+
+```bash
 docker compose up
 ```
 
@@ -33,12 +53,19 @@ docker compose up
 * The task used for defining a service for a cluster uses the images.
 * The images are connected by a private network with each other and by AWS Fargate (mediated by a load balancer) with the Web.
 
-## Video explanation
-[The link to the video](video/video.mp4)
+![ecr](img/ecr.png)
+
+![task](img/task.png)
 
 ## Screenshots
 ### Running the model
 ![Running the model](img/running_the_model.png)
 
+## Video explanation
+[The link to the video](https://youtu.be/CqncbvVtEcs)
+
 ## For evaluators
 [The link to the AWS hosted model](http://final-project-load-balancer-more-744181348.us-east-2.elb.amazonaws.com)
+
+[def]: https://github.com/johnnymosby/cloud_final_project/actions/workflows/docker-image-frontend.yml
+[def]: https://github.com/johnnymosby/cloud_final_project/actions/workflows/docker-image-backend.yml
