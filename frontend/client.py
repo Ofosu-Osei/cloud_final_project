@@ -23,7 +23,7 @@ st.markdown(gradient_text_html, unsafe_allow_html=True)
 
 model = st.radio(
     "",
-    options=["Llama 3-70B", "GPT-3.5", "Claude-3 Haiku", "Mixtral 8x7B"],
+    options=["Llama", "GPT-3.5", "Claude-3 Haiku", "Mixtral 8x7B"],
     index=0,
     horizontal=True,
 )
@@ -32,7 +32,7 @@ st.session_state["model"] = model
 # Handle each model's availability
 if st.session_state["model"] in ["GPT-3.5", "Claude-3 Haiku", "Mixtral 8x7B"]:
     st.warning(f"🛑 {st.session_state['model']} is still under construction. Please check back later.")
-elif st.session_state["model"] == "Llama 3-70B":
+elif st.session_state["model"] == "Llama":
     st.success(f"✅ {st.session_state['model']} is ready to go! Start your chat now.")
 
 with open("ui/sidebar.md", "r") as sidebar_file:
