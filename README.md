@@ -53,16 +53,17 @@ docker compose up
 * The task used for defining a service for a cluster uses the images.
 * The images are connected by a private network with each other and by AWS Fargate (mediated by a load balancer) with the Web.
 
+## Screenshots
+
 ![ecr](img/ecr.png)
 
 ![task](img/task.png)
 
-## Screenshots
 ### Running the model
 ![Running the model](img/running_the_model.png)
 
-## Video explanation
-[The link to the video](https://youtu.be/CqncbvVtEcs)
+## Video Explanation
+[Video Link](https://youtu.be/76KCzfdluwU)
 
 ## For evaluators
 [The link to the AWS hosted model](http://final-project-load-balancer-more-744181348.us-east-2.elb.amazonaws.com)
