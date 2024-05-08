@@ -11,7 +11,7 @@
 
 ## Overview
 
-LLMOps is a cutting-edge project designed to operationalize machine learning by serving an open-source model through a robust web service developed in Rust. This project emphasizes the deployment of machine learning models at scale, utilizing Kubernetes for orchestration and a CI/CD pipeline for streamlined operations. This README provides all necessary information to get started with LLMOps, including setup and usage.
+simplyChat is a cutting-edge project designed to operationalize machine learning by serving an open-source model through a robust web service developed in Rust. This project emphasizes the deployment of machine learning models at scale, utilizing Kubernetes for orchestration and a CI/CD pipeline for streamlined operations. This README provides all necessary information to get started with LLMOps, including setup and usage.
 
 **Final Project Requirements**
 
@@ -38,7 +38,7 @@ This project demonstrates how to deploy an open-source language model on AWS usi
 
 * Run:
 ```bash
-git clone https://github.com/johnnymosby/ç.git
+git clone https://github.com/johnnymosby/cloud_final_project.git
 cd cloud_final_project
 ```
 
